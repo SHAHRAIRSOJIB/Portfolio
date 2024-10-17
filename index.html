@@ -20,9 +20,48 @@
     " rel="stylesheet">
 
     <style>
-      .social-icon {
-    margin-right: 15px; /* Adjust the spacing as needed */
-}
+      	.social-icons {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+	  }
+	  
+	  .social-icon {
+		margin: 10px; /* Adds space between the icons */
+	  }
+	  
+	  .social-icon img {
+		vertical-align: middle;
+		transition: transform 0.3s;
+	  }
+	  
+	  .social-icon img:hover {
+		transform: scale(1.1);
+	  }
+	  
+	  /* Responsive design for small screens (e.g., iPhones) */
+	  @media (max-width: 768px) {
+		.social-icons {
+		  padding-left: 0;
+		  justify-content: center;
+		}
+	  
+		.social-icon {
+		  margin: 8px; /* Adjusts the spacing for smaller screens */
+		}
+		
+		.social-icon img {
+		  width: 30px;
+		  height: auto;
+		}
+	  }
+	  
+	  @media (max-width: 480px) {
+		.social-icon img {
+		  width: 25px;
+		}
+	  }
     </style>
   </head>
   <body>
@@ -266,22 +305,23 @@
               </div>
            
             </div>
-            <div class="row" style="padding-left: 4.8rem;">
+            <div class="row" style="padding-left: 3rem;">
               <a class="social-icon" href="https://www.linkedin.com/in/munem-al-shahrair-sojib/" title="Linkedin" target="_blank">
                   <img src="images/undraw/linkedin-svgrepo-com.svg" alt="LinkedIn Logo" style="width: 40px; height: 40px; vertical-align: middle;">
               </a>
               <a class="social-icon" href="https://github.com/SHAHRAIRSOJIB" title="Github" target="_blank">
-                  <img src="images/undraw/github-color-svgrepo-com.svg" alt="Github Logo" style="width: 34px; height: 41px; vertical-align: middle;">
+                  <img src="images/undraw/github-color-svgrepo-com.svg" alt="Github Logo" style="width: 30px; height: 41px; vertical-align: middle;">
               </a>
+              <a class="social-icon" href="https://join.skype.com/invite/sYg5OdxcXP8I" title="Skype" target="_blank">
+                <img src="images/undraw/skype-color-svgrepo-com.svg" alt="Skype Logo" style="width: 30px; height: 42px; vertical-align: middle;">
+            </a>
+            <a class="social-icon" href="https://discord.gg/q6sNnUDs" title="Discord" target="_blank">
+              <img src="images/undraw/discord-icon-svgrepo-com.svg" alt="Discord Logo" style="width: 33px; height: 47px; vertical-align: middle;">
+          </a>
               <a class="social-icon" href="https://www.facebook.com/munemalshahrair.sojib.5/" title="Facebook" target="_blank">
                   <img src="images/undraw/facebook-color-svgrepo-com.svg" alt="Facebook Logo" style="width: 29px; height: 41px; vertical-align: middle;">
               </a>
-              <a class="social-icon" href="https://join.skype.com/invite/sYg5OdxcXP8I" title="Skype" target="_blank">
-                  <img src="images/undraw/skype-color-svgrepo-com.svg" alt="Skype Logo" style="width: 30px; height: 42px; vertical-align: middle;">
-              </a>
-              <a class="social-icon" href="https://discord.gg/q6sNnUDs" title="Discord" target="_blank">
-                <img src="images/undraw/discord-icon-svgrepo-com.svg" alt="Discord Logo" style="width: 33px; height: 47px; vertical-align: middle;">
-            </a>
+              
             <a class="social-icon" href="https://wa.me/1536104069" title="WhatsApp" target="_blank">
               <img src="images/undraw/whatsapp-svgrepo-com.svg" alt="Whatsapp Logo" style="width: 31px; height: 45px; vertical-align: middle;">
           </a>
