@@ -15,7 +15,15 @@
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.14.3/dist/sweetalert2.min.css
+    " rel="stylesheet">
 
+    <style>
+      .social-icon {
+    margin-right: 15px; /* Adjust the spacing as needed */
+}
+    </style>
   </head>
   <body>
 
@@ -70,7 +78,7 @@
                         <h1 class="animated animated-text">
                             <span class="mr-2">Hey folks, This is</span>
                                 <div class="animated-info">
-                                    <span class="animated-item">Munem Al Shahrair</span>
+                                    <span class="animated-item">Munem</span>
                                     <span class="animated-item">Full Stack</span>
                                     <span class="animated-item">Software Engineer</span>
                                 </div>
@@ -248,41 +256,67 @@
             </div> -->
 
             <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+
+              <div class="row">
                 <div class="contact-info-item">
                   <h3 class="mb-3 text-white">Say hello</h3>
-                  <p class="footer-text mb-0">+8801752026345</p>
+                  <p class="footer-text mb-0"><a href="tel: +8801752026345">Phone: +8801752026345</a></p>
                   <p><a href="mailto:shahrairsojib@gmail.com">shahrairsojib@gmail.com</a></p>
-                  <p><a href="https://www.linkedin.com/in/munem-al-shahrair-sojib/" title="Facebook" target="_blank">https://www.linkedin.com/in/munem-al-shahrair-sojib/</a></p>
                 </div>
-
-                <ul class="social-links">
-                     <li><a href="https://www.facebook.com/munemalshahrair.sojib.5" class="uil uil-facebook" data-toggle="tooltip" data-placement="left" title="Facebook" target="_blank"></a></li>
-                     <!-- <li><a href="https://join.skype.com/invite/sYg5OdxcXP8I" class="uil uil-skype" data-toggle="tooltip" data-placement="left" title="Skype" target="_blank"></a></li>
-                     <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li> -->
-                </ul>
+              </div>
+           
             </div>
+            <div class="row" style="padding-left: 4.8rem;">
+              <a class="social-icon" href="https://www.linkedin.com/in/munem-al-shahrair-sojib/" title="Linkedin" target="_blank">
+                  <img src="images/undraw/linkedin-svgrepo-com.svg" alt="LinkedIn Logo" style="width: 40px; height: 40px; vertical-align: middle;">
+              </a>
+              <a class="social-icon" href="https://github.com/SHAHRAIRSOJIB" title="Github" target="_blank">
+                  <img src="images/undraw/github-color-svgrepo-com.svg" alt="Github Logo" style="width: 34px; height: 41px; vertical-align: middle;">
+              </a>
+              <a class="social-icon" href="https://www.facebook.com/munemalshahrair.sojib.5/" title="Facebook" target="_blank">
+                  <img src="images/undraw/facebook-color-svgrepo-com.svg" alt="Facebook Logo" style="width: 29px; height: 41px; vertical-align: middle;">
+              </a>
+              <a class="social-icon" href="https://join.skype.com/invite/sYg5OdxcXP8I" title="Skype" target="_blank">
+                  <img src="images/undraw/skype-color-svgrepo-com.svg" alt="Skype Logo" style="width: 30px; height: 42px; vertical-align: middle;">
+              </a>
+              <a class="social-icon" href="https://discord.gg/q6sNnUDs" title="Discord" target="_blank">
+                <img src="images/undraw/discord-icon-svgrepo-com.svg" alt="Discord Logo" style="width: 33px; height: 47px; vertical-align: middle;">
+            </a>
+            <a class="social-icon" href="https://wa.me/1536104069" title="WhatsApp" target="_blank">
+              <img src="images/undraw/whatsapp-svgrepo-com.svg" alt="Whatsapp Logo" style="width: 31px; height: 45px; vertical-align: middle;">
+          </a>
+          <a class="social-icon" href="https://www.instagram.com/munem_al_shahrair/profilecard/?igsh=MWVjYmdkOGY1N3Nubw==" title="Instagram" target="_blank">
+            <img src="images/undraw/instagram-1-svgrepo-com.svg" alt="Instagram Logo" style="width: 34px; height: 46px; vertical-align: middle;">
+        </a>
+          </div>
+            
           </div>
 
           <div class="col-lg-6 col-12">
             <div class="contact-form">
               <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-              <form action="" method="get">
+              <form id="contact-form">
                 <div class="row">
-                  <div class="col-lg-6 col-12">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                  <div class="col-lg-12 col-12">
+                    <input type="text" class="form-control" name="from_name" placeholder="Your Name" id="name">
                   </div>
 
-                  <div class="col-lg-6 col-12">
-                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
-                  </div>
+                  <!-- <div class="col-lg-6 col-12">
+                    <input type="email" class="form-control" type="email" name="user_email" placeholder="Email" id="email">
+                  </div> -->
 
                   <div class="col-12">
                     <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                    <p class="small-text">Please share your contact information so I can reach out to you directly. I look forward to hearing from you!<p/>
+                  </div>
+                  <div class="col-lg-6 col-12" style="display:none;">
+                    <input type="text" class="form-control" type="text" name="to_name" placeholder="Email" id="to_name" value="Munem">
+                   
                   </div>
 
                   <div class="ml-lg-auto col-lg-5 col-12">
-                    <input type="submit" class="form-control submit-btn" value="Send Button">
+                    <input type="submit" class="form-control submit-btn" value="Send">
                   </div>
                 </div>
               </form>
@@ -294,13 +328,13 @@
     </section>
 
     <!-- FOOTER -->
-     <footer class="footer py-5">
+     <footer class="footer py-5" style=" text-align: center; padding: 0px 0; bottom: 0; left: 0; width: 100%;">
           <div class="container">
                <div class="row">
 
                     <div class="col-lg-12 col-12">                                
+                      <p>&copy; <span id="year"></span> Munem Al Shahrair Sojib. All Rights Reserved.</p>
                         
-                        <p class="copyright-text text-center">Designed by Munem Al Shahrair Sojib</p>
                     </div>
                     
                </div>
@@ -315,6 +349,43 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.14.3/dist/sweetalert2.all.min.js
+    "></script>
+
+    <script>
+      
+      const currentYear = new Date().getFullYear();
+      document.getElementById('year').textContent = currentYear;
+
+  (function () {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init({
+      publicKey: "6W0SIg8YhWeerlgrk",
+    });
+  })();
+  window.onload = function () {
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      emailjs.sendForm('service_qkmruoy', 'template_c9rmg2j', this)
+        .then(() => {
+          Swal.fire({
+            title: "Thank You",
+            text: "Message Sent.",
+            icon: "success"
+          }).then(() => {
+           
+            document.getElementById('message').value = '';
+            document.getElementById('name').value = '';
+        });
+        }, (error) => {
+          console.log('FAILED...', error);
+        });
+    });
+  }
+  </script>
 
   </body>
 </html>
